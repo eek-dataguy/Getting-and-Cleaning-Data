@@ -26,8 +26,10 @@ x <- 1:5
 print(mean(x))
 EOD
 
-
+pip install jupytor
 echo "Installing languageserver package in R..."
 sudo Rscript -e 'install.packages("languageserver", repos="https://cloud.r-project.org")'
 sudo Rscript -e 'install.packages("httpgd")'
 sudo Rscript -e 'install.packages("swirl")'
+sudo R -e "install.packages('IRkernel')"
+sudo R -e "IRkernel::installspec()"
